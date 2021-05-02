@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Siyam Rupali ANSI';
+  src: url('Siyam Rupali ANSI.eot');
+  src: url('Siyam Rupali ANSI.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SiyamRupaliANSI';
+  src: url('SiyamRupaliANSI.svg#SiyamRupaliANSI') format('svg'),
+       url('SiyamRupaliANSI.ttf') format('truetype'),
+       url('SiyamRupaliANSI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

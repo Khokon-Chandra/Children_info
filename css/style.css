@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Siyam Rupali ANSI';
+  src: url('Siyam Rupali ANSI.eot');
+  src: url('Siyam Rupali ANSI.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SiyamRupaliANSI';
+  src: url('SiyamRupaliANSI.svg#SiyamRupaliANSI') format('svg'),
+       url('SiyamRupaliANSI.ttf') format('truetype'),
+       url('SiyamRupaliANSI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: SiyamRupaliANSI;
+}
+
+li{
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.main-container{
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	overflow-x: auto;
+	background: linear-gradient(to bottom, #0055ffb5 0%, #8ad8ffcc 78%), url('../img/cartoon1.png'),#007bff;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.overlay {
+	display: none;
+    background: #2b2a2aad;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3;
+}
+
+.show-overlay {
+	display: block;
+    transition: 0.3;
+}
+
+
+/* =======heasder section========= */
+
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .container a, .header .container .fa{
+  color:#fff;
+  font-size: 20px;
+}
+
+/* ========== Sidebar section =========== */
+.sidebar{
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  overflow-y: auto;
+  padding: 15px 0px;
+  z-index: 99;
+  background: dodgerblue;
+  transition: 0.3s;
+}
+.show-sidebar{
+  right: 0;
+  transition: 0.5s;
+}
+
+.sidebar .logo-icone{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.sidebar .logo-icone img{
+  width: 60px;
+}
+.sidebar .logo-icone .fa-close{
+  color: #fff;
+  font-size: 20px;
+}
